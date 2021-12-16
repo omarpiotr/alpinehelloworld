@@ -7,7 +7,7 @@ pipeline {
         PRODUCTION = "omar-ajc-prod-env"
         USERNAME = "omarpiotrdeveloper"
         CONTAINER_NAME = "alpinehelloworld"
-    //}
+    }
 
     agent none
 
