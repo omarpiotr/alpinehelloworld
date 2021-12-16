@@ -7,6 +7,7 @@ pipeline {
         PRODUCTION = "omar-ajc-prod-env"
         USERNAME = "omarpiotrdeveloper"
         CONTAINER_NAME = "alpinehelloworld"
+        EC2_PRODUCTION_HOST = "54.144.136.33"
     }
 
     agent none
@@ -105,7 +106,7 @@ pipeline {
             }
         }         
     }
-    
+
     stage('Deploy app on EC2-cloud Production') {
         agent any
         when{
